@@ -28,12 +28,13 @@
 <li>the ElevenLabs API, which turns that reply into speech when ATHENA reads it aloud.</li>
 </ul>
 <p>Gmail data is not sold, not used for advertising, not shared with anyone else, and not used to train or improve generalized AI or machine-learning models.</p>
+<p>No person other than the owner reads Gmail data.</p>
 
 <h2>Storage and security</h2>
 <ul>
 <li>ATHENA runs on a private server reachable only through the owner's private network; it is not exposed to the public internet.</li>
 <li>The Google authorization token is stored encrypted (AES-256-GCM). Temporary access tokens exist only in memory.</li>
-<li>Email content is not written to logs or saved to disk. It stays only in the current conversation, in memory, and is discarded when the conversation ends.</li>
+<li>Email content is not written to logs or saved to disk. It stays only in the current conversation, in memory, and is discarded when the conversation ends. The only exception is a specific fact the owner explicitly asks ATHENA to remember, which is stored encrypted and can be deleted on request.</li>
 <li>No passwords are collected; access uses Google's official OAuth consent.</li>
 </ul>
 
